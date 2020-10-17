@@ -1,3 +1,14 @@
+.homeContainer{
+    margin: 10px 0px;
+    border-radius: 13px;
+    padding: 20px;
+}
 .homeHeader{
+    padding: 20px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.homebodyContainer{
+    border: 1px dashed black;
     padding: 20px;
 }

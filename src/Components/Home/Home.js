@@ -10,13 +10,13 @@ const Home = () => {
         </div>
       </div>
       <div className="row justify-content-center">
-        <div className="homebodyContainer">
-          <p>
+        <div className="homebodyContainer col">
+          <p className="text-left">
             Welcome to my Widget App this is an application that allows you (the user) to view the current
             time, and weather in your current location. You can navigate
             between the weather and the time by using the navigation bar.
             Also don't forget to try the Dark Mode feature!
-            
+
           </p>
         </div>
       </div>
