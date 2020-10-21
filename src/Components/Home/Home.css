@@ -1,7 +1,8 @@
 .homeContainer{
-    margin: 10px 0px;
     border-radius: 13px;
     padding: 20px;
+    justify-content: center;
+    align-content: center;
 }
 .homeHeader{
     padding: 20px;
