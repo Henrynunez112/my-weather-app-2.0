@@ -1,10 +1,10 @@
 import React from 'react';
+import WeatherHeader from './WeatherHeader';
 
 const WeatherBody = ({weather}) =>{
-    debugger
     return (
         <div>
-            hello world
+            <WeatherHeader weather={weather} />
         </div>
     )
 

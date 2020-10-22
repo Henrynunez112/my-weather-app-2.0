@@ -4,9 +4,9 @@ import axios from "axios";
 
 const Weather = () => {
   const [weather, setWeather] = useState({});
-  console.log(process.env.REACT_APP_API_KEY);
   // const [isLoading, setIsLoading] = useState(true);
   const key = process.env.REACT_APP_API_KEY;
+
 
   //created a promise call to get the longitude and latitude
   const getLocation = async () => {
@@ -19,12 +19,10 @@ const Weather = () => {
   };
 
   const weatherCall = async (lat, lon) => {
-    // const API_URL = "api.openweathermap.org/data/2.5/forecast";
+    const API_URL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&appid=${key}`;
     // const URL = API_URL + ``
     debugger;
-    let res = await axios.get(
-      `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&appid=${key}`
-    );
+    let res = await axios.get(API_URL);
     return res.data;
   };
 
@@ -37,10 +35,10 @@ const Weather = () => {
       weatherCall(res[0], res[1]).then((res) => setting(res));
     });
   };
-
+  
   useEffect(() => {
-    pageLoad();
-  });
+      pageLoad()
+  }, []);
 
   return (
     <div>
