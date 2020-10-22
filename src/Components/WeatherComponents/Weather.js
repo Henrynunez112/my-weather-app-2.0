@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import WeatherBody from "../WeatherComponents/WeatherBody";
 import axios from "axios";
-const { WEATHER_API_KEY } = process.env;
+require('dotenv').config()
+// const { WEATHER_API_KEY } = process.env;
 
 const Weather = () => {
   const [weather, setWeather] = useState({});
@@ -18,9 +19,11 @@ const Weather = () => {
   };
 
   const weatherCall = async (lat, lon) => {
+    // const API_URL = "api.openweathermap.org/data/2.5/forecast";
+    // const URL = API_URL + ``
     debugger
     let res = await axios.get(
-      `api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=3382429b47bd7f5f9290fad35b01287d`
+      `api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${process.env.WEATHER_API_KEY}`
     );
     return res.data;
   };
