@@ -19,7 +19,7 @@ const Weather = () => {
   };
 
   const weatherCall = async (lat, lon) => {
-    const API_URL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=imperial&appid=${key}`;
+    const API_URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`;
     // const URL = API_URL + ``
     debugger;
     let res = await axios.get(API_URL);
