@@ -4,10 +4,9 @@ import axios from "axios";
 
 const Weather = () => {
   const [weather, setWeather] = useState({});
-  // const [isLoading, setIsLoading] = useState(true);
   const key = process.env.REACT_APP_API_KEY;
-
-
+  
+  
   //created a promise call to get the longitude and latitude
   const getLocation = async () => {
     return new Promise((resolve, reject) => {
@@ -16,12 +15,16 @@ const Weather = () => {
       });
     });
   };
-
+  
   const weatherCall = async (lat, lon) => {
-    const API_URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`;
     debugger;
-    let res = await axios.get(API_URL);
-    return res.data;
+    try{
+      let res = await axios.get(`https://api.weatherbit.io/v2.0/current?lat=${lat}&lon=${lon}&key=${key}&units=I`);
+      setWeather(res.data.data[0])
+      // return res.data;
+    }catch(err){
+      console.log(err)
+    }
   };
 
   const setting = (res) => {

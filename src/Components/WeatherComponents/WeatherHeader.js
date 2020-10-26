@@ -1,15 +1,14 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
 
 const WeatherHeader = ({ weather }) => {
-  const tempInfo = weather.main
-  debugger
-  console.log(tempInfo)
 
 
+debugger
   return (
     <div>
       <p>{weather.timezone}</p>
+      <p>{weather.city_name}</p>
     </div>
   );
 };
