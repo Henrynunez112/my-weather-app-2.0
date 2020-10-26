@@ -1,8 +1,12 @@
 import React from "react";
 
+
 const WeatherHeader = ({ weather }) => {
-  console.log(weather)
+  const tempInfo = weather.main
   debugger
+  console.log(tempInfo)
+
+
   return (
     <div>
       <p>{weather.timezone}</p>

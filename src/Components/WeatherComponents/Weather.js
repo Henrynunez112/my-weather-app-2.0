@@ -11,7 +11,6 @@ const Weather = () => {
   //created a promise call to get the longitude and latitude
   const getLocation = async () => {
     return new Promise((resolve, reject) => {
-      debugger;
       navigator.geolocation.getCurrentPosition((position) => {
         resolve([position.coords.latitude, position.coords.longitude]);
       });
@@ -20,7 +19,6 @@ const Weather = () => {
 
   const weatherCall = async (lat, lon) => {
     const API_URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`;
-    // const URL = API_URL + ``
     debugger;
     let res = await axios.get(API_URL);
     return res.data;
