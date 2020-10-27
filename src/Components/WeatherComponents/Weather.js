@@ -19,9 +19,8 @@ const Weather = () => {
   
   const weatherCall = async (lat, lon) => {
     console.log(lat, lon)
-    debugger
     try{
-      let res = await axios.get(`https://api.weatherbit.io/v2.0/current?key=${key}&lat=${lat}&lon=${lon}`);
+      let res = await axios.get(`https://api.weatherbit.io/v2.0/current?key=${key}&lat=${lat}&lon=${lon}&units=I`);
       debugger
       setCurrentWeather(res.data.data[0].weather)
       return res.data.data[0];

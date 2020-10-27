@@ -1,16 +1,15 @@
 import React from "react";
 
-
 const WeatherHeader = ({ weather, currentWeather }) => {
-
-debugger
   return (
-    <div>
+    <div className="weatherBody">
+    <div className="weatherHeader">
       <img className="headImg" alt="current Temp" src={`https://www.weatherbit.io/static/img/icons/${currentWeather.icon}.png`} />
-      <p>{currentWeather.description}</p>
-      <p>{weather.timezone}</p>
       <p>{weather.city_name}</p>
       <p>{weather.state_code}</p>
+      <p>{currentWeather.description}</p>
+      <span>{weather.app_temp}°F</span>
+    </div>
     </div>
   );
 };
