@@ -17,11 +17,12 @@ const Weather = () => {
   };
   
   const weatherCall = async (lat, lon) => {
-    debugger;
+    console.log(lat, lon)
+    debugger
     try{
-      let res = await axios.get(`https://api.weatherbit.io/v2.0/current?lat=${lat}&lon=${lon}&key=${key}&units=I`);
-      setWeather(res.data.data[0])
-      // return res.data;
+      let res = await axios.get(`https://api.weatherbit.io/v2.0/current?key=${key}&lat=${lat}&lon=${lon}`);
+      debugger
+      return res.data.data[0];
     }catch(err){
       console.log(err)
     }
@@ -38,6 +39,7 @@ const Weather = () => {
   };
   
   useEffect(() => {
+    
       pageLoad()
   }, []);
 
