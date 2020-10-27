@@ -1,11 +1,11 @@
 import React from 'react';
 import WeatherHeader from './WeatherHeader';
 
-const WeatherBody = ({weather}) =>{
+const WeatherBody = ({weather, currentWeather}) =>{
     
     return (
         <div>
-            <WeatherHeader weather={weather} />
+            <WeatherHeader weather={weather} currentWeather={currentWeather} />
         </div>
     )
 

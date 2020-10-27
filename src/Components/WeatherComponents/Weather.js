@@ -4,6 +4,7 @@ import axios from "axios";
 
 const Weather = () => {
   const [weather, setWeather] = useState({});
+  const [currentWeather, setCurrentWeather] = useState({})
   const key = process.env.REACT_APP_API_KEY;
   
   
@@ -22,6 +23,7 @@ const Weather = () => {
     try{
       let res = await axios.get(`https://api.weatherbit.io/v2.0/current?key=${key}&lat=${lat}&lon=${lon}`);
       debugger
+      setCurrentWeather(res.data.data[0].weather)
       return res.data.data[0];
     }catch(err){
       console.log(err)
@@ -45,7 +47,7 @@ const Weather = () => {
 
   return (
     <div>
-      <WeatherBody weather={weather} />
+      <WeatherBody weather={weather} currentWeather={currentWeather} />
     </div>
   );
 };
