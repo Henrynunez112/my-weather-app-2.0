@@ -4,6 +4,7 @@ import axios from "axios";
 
 const Weather = () => {
   const [weather, setWeather] = useState({});
+  const [day, setDay] = useState({})
   const [currentWeather, setCurrentWeather] = useState({})
   const key = process.env.REACT_APP_API_KEY;
   
@@ -21,7 +22,6 @@ const Weather = () => {
     console.log(lat, lon)
     try{
       let res = await axios.get(`https://api.weatherbit.io/v2.0/current?key=${key}&lat=${lat}&lon=${lon}&units=I`);
-      debugger
       setCurrentWeather(res.data.data[0].weather)
       return res.data.data[0];
     }catch(err){
@@ -29,13 +29,27 @@ const Weather = () => {
     }
   };
 
+  const weatherDay = async (lat, lon) =>{
+    try{
+      let res = await axios.get(`https://api.sunrise-sunset.org/json?lng=${lon}&lat=${lat}&formatted=0`);
+      return res.data.results;
+    }catch(err){
+      console.log(err)
+
+    }
+  }
+
   const setting = (res) => {
     setWeather(res);
   };
+  const daySetting = (res) =>{
+    setDay(res)
+  }
 
   const pageLoad = () => {
     getLocation().then((res) => {
       weatherCall(res[0], res[1]).then((res) => setting(res));
+      weatherDay(res[0], res[1]).then((res) => daySetting(res));
     });
   };
   
@@ -46,7 +60,7 @@ const Weather = () => {
 
   return (
     <div>
-      <WeatherBody weather={weather} currentWeather={currentWeather} />
+      <WeatherBody weather={weather} currentWeather={currentWeather} day={day} />
     </div>
   );
 };

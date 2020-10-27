@@ -1,13 +1,13 @@
 import React from 'react';
 import WeatherHeader from './WeatherHeader';
-import WeatherTimezone from './WeatherTimezone';
+import WeatherDay from './WeatherDay';
 
-const WeatherBody = ({weather, currentWeather}) =>{
+const WeatherBody = ({weather, currentWeather, day}) =>{
     
     return (
         <div>
             <WeatherHeader weather={weather} currentWeather={currentWeather} />
-            <WeatherTimezone weather={weather} />
+            <WeatherDay day={day} weather={weather} />
         </div>
     )
 
