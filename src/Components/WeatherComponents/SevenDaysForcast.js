@@ -4,7 +4,6 @@ import moment from "moment";
 
 const SevenDaysForcast = ({currentWeather}) =>{
     let forcasts = currentWeather;
-    debugger
     return(
         <div className="sixDays">  
             <ul>
@@ -13,7 +12,7 @@ const SevenDaysForcast = ({currentWeather}) =>{
                         return(
                             <div key={i + 1} className="singleDateDiv">
                                 <li className="singleDate">
-                                    <p>{moment(forcast.datetime).format('MMMM Do YYYY')}</p>
+                                    <p>{moment(forcast.datetime).format('dddd')}</p>
                                     <img className="forcastImg" alt="seven day forcast" src={`https://www.weatherbit.io/static/img/icons/${forcast.weather.icon}.png`} />
                                     <p>{forcast.weather.description}</p>
                                     <p>Precipitation: {forcast.pop}% </p>

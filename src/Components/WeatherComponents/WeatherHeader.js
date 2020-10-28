@@ -2,7 +2,6 @@ import React from "react";
 import moment from "moment";
 
 const WeatherHeader = ({ weather, today, weatherImg }) => {
-
   return (
     <div className="weatherBody">
       <div className="weatherToday">
