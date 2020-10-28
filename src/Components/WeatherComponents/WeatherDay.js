@@ -9,10 +9,10 @@ const WeatherDay = ({day, weather}) =>{
         <div className="weatherDay">
             <p>Timezone: <span>{weather.timezone}</span></p>
             <p>
-            Sunrise: <Moment date={sunrise} format="hh:mm"/> A.M.
+            Sunrise: <Moment date={sunrise} format="hh:mm A"/>
             </p>
             <p>
-             Sunset: <Moment date={sunset} format="hh:mm"/> P.M.
+             Sunset: <Moment date={sunset} format="hh:mm A"/>
             </p>
           </div>
     )

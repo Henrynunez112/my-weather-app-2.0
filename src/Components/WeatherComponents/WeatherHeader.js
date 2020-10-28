@@ -13,8 +13,8 @@ const WeatherHeader = ({ weather, today, weatherImg }) => {
       <h4>{weather.country_code}</h4>
       <img className="headImg" alt="current Temp" src={`https://www.weatherbit.io/static/img/icons/${weatherImg.icon}.png`} />
       <p>{weatherImg.description}</p>
-      <p>High: {today.high_temp}°F</p>
-      <p>Low: {today.low_temp}°F</p>
+      <p>High: {today.high_temp} °F</p>
+      <p>Low: {today.low_temp} °F</p>
     </div>
     </div>
   );
