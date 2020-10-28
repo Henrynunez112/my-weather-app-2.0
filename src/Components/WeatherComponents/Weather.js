@@ -65,7 +65,7 @@ const Weather = () => {
   }, []);
 
   return (
-    <div>
+    <div className="weatherDiv">
       <WeatherBody weather={weather} currentWeather={currentWeather} today={today} weatherImg={weatherImg} day={day} />
     </div>
   );

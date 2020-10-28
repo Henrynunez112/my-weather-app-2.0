@@ -12,9 +12,9 @@ const SevenDaysForcast = ({currentWeather}) =>{
                         return(
                             <div key={i + 1} className="singleDateDiv">
                                 <li className="singleDate">
-                                    <p>{moment(forcast.datetime).format('dddd')}</p>
+                                    <h3>{moment(forcast.datetime).format('dddd')}</h3>
                                     <img className="forcastImg" alt="seven day forcast" src={`https://www.weatherbit.io/static/img/icons/${forcast.weather.icon}.png`} />
-                                    <p>{forcast.weather.description}</p>
+                                    <h5>{forcast.weather.description}</h5>
                                     <p>Precipitation: {forcast.pop}% </p>
                                     <p>High: {forcast.high_temp.toString().slice(0, 2)} °F</p>
                                     <p>Low: {forcast.low_temp.toString().slice(0, 2)} °F</p>
