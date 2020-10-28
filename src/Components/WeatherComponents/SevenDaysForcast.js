@@ -6,13 +6,13 @@ const SevenDaysForcast = ({currentWeather}) =>{
     let forcasts = currentWeather;
     debugger
     return(
-        <div>  
+        <div className="sixDays">  
             <ul>
                 {forcasts.map((forcast, i) =>{
                     if(i > 0){
                         return(
-                            <div key={i + 1}>
-                                <li>
+                            <div key={i + 1} className="singleDateDiv">
+                                <li className="singleDate">
                                     <p>{moment(forcast.datetime).format('MMMM Do YYYY')}</p>
                                     <img className="forcastImg" alt="seven day forcast" src={`https://www.weatherbit.io/static/img/icons/${forcast.weather.icon}.png`} />
                                     <p>{forcast.weather.description}</p>
