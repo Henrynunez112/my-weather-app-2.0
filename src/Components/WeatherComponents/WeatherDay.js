@@ -5,10 +5,9 @@ import 'moment-timezone'
 const WeatherDay = ({day, weather}) =>{
     let sunrise = new Date(day.sunrise);
     let sunset = new Date(day.sunset);
-    debugger
     return(
         <div className="weatherDay">
-            <p>{weather.timezone}</p>
+            <p>Timezone: <span>{weather.timezone}</span></p>
             <p>
             Sunrise: <Moment date={sunrise} format="hh:mm"/> A.M.
             </p>

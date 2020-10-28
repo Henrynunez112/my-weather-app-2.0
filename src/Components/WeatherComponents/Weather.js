@@ -4,8 +4,10 @@ import axios from "axios";
 
 const Weather = () => {
   const [weather, setWeather] = useState({});
+  const [weatherImg, setWeatherImg] = useState({})
+  const [today, setToday] = useState({})
   const [day, setDay] = useState({})
-  const [currentWeather, setCurrentWeather] = useState({})
+  const [currentWeather, setCurrentWeather] = useState([])
   const key = process.env.REACT_APP_API_KEY;
   
   
@@ -21,15 +23,19 @@ const Weather = () => {
   const weatherCall = async (lat, lon) => {
     console.log(lat, lon)
     try{
-      let res = await axios.get(`https://api.weatherbit.io/v2.0/current?key=${key}&lat=${lat}&lon=${lon}&units=I`);
-      setCurrentWeather(res.data.data[0].weather)
-      return res.data.data[0];
+      let res = await axios.get(`https://api.weatherbit.io/v2.0/forecast/daily?key=${key}&lat=${lat}&lon=${lon}&units=I&days=7`);
+      setCurrentWeather(res.data.data);
+      setToday(res.data.data[0]);
+      setWeatherImg(res.data.data[0].weather)
+      
+      return res.data;
     }catch(err){
       console.log(err)
     }
   };
 
   const weatherDay = async (lat, lon) =>{
+    console.log(lat, lon)
     try{
       let res = await axios.get(`https://api.sunrise-sunset.org/json?lng=${lon}&lat=${lat}&formatted=0`);
       return res.data.results;
@@ -60,7 +66,7 @@ const Weather = () => {
 
   return (
     <div>
-      <WeatherBody weather={weather} currentWeather={currentWeather} day={day} />
+      <WeatherBody weather={weather} currentWeather={currentWeather} today={today} weatherImg={weatherImg} day={day} />
     </div>
   );
 };
