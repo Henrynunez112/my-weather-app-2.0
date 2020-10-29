@@ -1,3 +1,8 @@
+:root{
+    --black: #000000;
+    --tron: #7DFDFE;
+    --cultured: #F8F9FA;
+}
 .homeContainer{
     border-radius: 13px;
     padding: 60px;

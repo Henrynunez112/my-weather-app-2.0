@@ -20,7 +20,7 @@ const NavBar = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
-          <li className="nav-item active">
+          <li className="nav-item">
             <NavLink className="nav-link" exact to="/">
               Home
             </NavLink>
@@ -28,22 +28,6 @@ const NavBar = () => {
           <li className="nav-item">
             <NavLink className="nav-link" exact to="/weather">Weather</NavLink>
           </li>
-          {/* 
-          <li className="nav-item">
-            <NavLink className="nav-link">
-              Pricing
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              className="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-            >
-              Disabled
-            </NavLink>
-          </li> */}
         </ul>
       </div>
     </nav>
