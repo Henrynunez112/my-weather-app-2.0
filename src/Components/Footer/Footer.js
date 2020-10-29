@@ -5,12 +5,15 @@ const Footer = () =>{
     return(
         <div className="footer">
            <ul class="nav footerUl justify-content-end">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
+            <li class="nav-item" id="contactIcon">
+             <a class="nav-link active" href={"https://www.linkedin.com/in/henrysaulnunez/"}
+                    target="_blank">
+linkedin
+             </a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="#">Link</a>
+                </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Link</a>
   </li>

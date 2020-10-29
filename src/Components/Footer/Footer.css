@@ -14,3 +14,11 @@
 .footerUl{
     border: 1px solid var(--black);
 }
+.contactIcon{
+    /* border: 2px solid var(--oxfordBlue); */
+  border-radius: 50px;
+  /* background-color: var(--magnolia); */
+  padding: 5px;
+  margin: 10px 0px;
+  box-shadow: 5px 5px var(--stPatrickOpacity);
+}
