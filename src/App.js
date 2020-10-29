@@ -5,6 +5,7 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import Weather from "./Components/WeatherComponents/Weather";
 import NavBar from "./Components/NavBar/NavBar";
 import Home from "./Components/Home/Home";
+import Footer from "./Components/Footer/Footer.js"
 import "./App.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Weather />
         </Route>
       </Switch>
+      <Footer />
     </div>
   );
 }

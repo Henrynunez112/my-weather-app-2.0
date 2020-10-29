@@ -3,7 +3,7 @@ import "../Home/Home.css";
 
 const Home = () => {
   return (
-    <div className="homeContainer justify-content-center container">
+    <div className="homeContainer container">
       <div className="jumbotron homeJumbotron">
       <div className="row justify-content-center homeHeaderRow">
         <div className="homeHeader col-10 col-md-auto">

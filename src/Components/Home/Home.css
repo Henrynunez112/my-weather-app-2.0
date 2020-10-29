@@ -5,24 +5,29 @@
 }
 .homeContainer{
     border-radius: 13px;
-    padding: 60px;
+    position: relative;
+    padding: 60px 15px 0;
     justify-content: center;
     align-content: center;
     background-color: var(--cultured) !important;
 }
 .homeJumbotron{
     box-shadow: 5px 10px 8px #888888;
+    
     border-radius: 0px;
     border: 1px solid var(--black);
     background-color: var(--cultured) !important;
+
 }
 .homeHeader{
     padding: 20px;
     border-bottom: 1px solid var(--black);
     box-shadow: 0 4px 2px -2px gray;
     margin-bottom: 20px;
+    
 }
 .homebodyContainer{
     border: 1px solid black;
     padding: 20px;
+    
 }
