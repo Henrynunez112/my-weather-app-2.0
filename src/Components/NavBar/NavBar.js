@@ -1,11 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <a className="navbar-brand" href="/">
-        Henry's Widget App
+        <span id='brandedH'>H</span>enry's Widget App
       </a>
       <button
         className="navbar-toggler"

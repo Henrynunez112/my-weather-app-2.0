@@ -8,13 +8,21 @@
     padding: 60px;
     justify-content: center;
     align-content: center;
+    background-color: var(--cultured) !important;
+}
+.homeJumbotron{
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 0px;
+    border: 1px solid var(--black);
+    background-color: var(--cultured) !important;
 }
 .homeHeader{
     padding: 20px;
-    border: 1px solid black;
-    margin-bottom: 10px;
+    border-bottom: 1px solid var(--black);
+    box-shadow: 0 4px 2px -2px gray;
+    margin-bottom: 20px;
 }
 .homebodyContainer{
-    border: 1px dashed black;
+    border: 1px solid black;
     padding: 20px;
 }

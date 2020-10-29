@@ -1,5 +1,11 @@
+:root{
+  --black: #000000;
+  --tron: #7DFDFE;
+  --cultured: #F8F9FA;
+}
 .App {
   text-align: center;
+  background-color: var(--cultured);
 }
 
 .App-logo {
