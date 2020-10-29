@@ -6,19 +6,19 @@ const Footer = () =>{
         <div className="footer">
            <ul class="nav footerUl justify-content-end">
             <li class="nav-item" id="contactIcon">
-             <a class="nav-link active" href={"https://www.linkedin.com/in/henrysaulnunez/"}
+             <a class="nav-link" href={"https://www.linkedin.com/in/henrysaulnunez/"}
                     target="_blank">
-linkedin
+<i class="devicon-linkedin-plain"></i>
              </a>
             </li>
             <li class="nav-item">
-             <a class="nav-link" href="#">Link</a>
+             <a class="nav-link" href={"https://github.com/Henrynunez112/"} target="_blank"><i class="devicon-github-plain"></i></a>
                 </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href={"https://twitter.com/stoic1190"} target="_blank"><i class="devicon-twitter-plain"></i></a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    <a class="nav-link" href={"https://the-dev-known-as-henrynunez.netlify.app"} target="_blank"><i class="devicon-chrome-plain"></i></a>
   </li>
 </ul>
         </div>
