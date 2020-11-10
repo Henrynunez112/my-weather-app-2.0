@@ -4,6 +4,7 @@ import axios from "axios";
 
 const Weather = () => {
   const [weather, setWeather] = useState({});
+  const [current, setCurrent] = useState({})
 
   const key = process.env.REACT_APP_API_KEY;
   
@@ -20,8 +21,9 @@ const Weather = () => {
   const weatherCall = async (lat, lon) => {
     console.log(lat, lon)
     try{
-         let res = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=${key}`)
+      let res = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=${key}&units=imperial`)
       debugger
+      setCurrent(res.data.current)
       return res.data;
     }catch(err){
       console.log(err)
@@ -44,8 +46,7 @@ const Weather = () => {
 
   return (
     <div className="weatherDiv">
-      <WeatherBody weather={weather} />
-      {/* currentWeather={currentWeather} today={today} weatherImg={weatherImg} */}
+      <WeatherBody weather={weather} current={current} />
     </div>
   );
 };
