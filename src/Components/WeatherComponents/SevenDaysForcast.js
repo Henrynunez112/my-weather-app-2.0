@@ -7,9 +7,8 @@ const SevenDaysForcast = ({currentWeather}) =>{
     return(
         <div className="sixDays">  
             <ul>
-                {forcasts.map((forcast, i) =>{
-                    if(i > 0){
-                        return(
+                { forcasts.map((forcast, i) => {
+                    return(
                             <div key={i + 1} className="singleDateDiv">
                                 <li className="singleDate">
                                     <h3>{moment(forcast.datetime).format('dddd')}</h3>
@@ -21,8 +20,6 @@ const SevenDaysForcast = ({currentWeather}) =>{
                                 </li>
                             </div>
                         )
-                    }
-                    
                 })}
             </ul>
 

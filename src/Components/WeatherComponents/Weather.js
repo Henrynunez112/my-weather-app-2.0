@@ -6,9 +6,9 @@ const Weather = () => {
   const [weather, setWeather] = useState({});
   const [weatherImg, setWeatherImg] = useState({})
   const [today, setToday] = useState({})
-  const [day, setDay] = useState({})
   const [currentWeather, setCurrentWeather] = useState([])
-  const key = process.env.REACT_APP_API_KEY;
+  // const key = process.env.REACT_APP_API_KEY;
+  const keyTwo = process.env.REACT_APP_WEATHER_API;
   
   
   //created a promise call to get the longitude and latitude
@@ -23,7 +23,10 @@ const Weather = () => {
   const weatherCall = async (lat, lon) => {
     console.log(lat, lon)
     try{
-      let res = await axios.get(`https://api.weatherbit.io/v2.0/forecast/daily?key=${key}&lat=${lat}&lon=${lon}&units=I&days=7`);
+      // let res = await axios.get(`https://api.weatherbit.io/v2.0/forecast/daily?key=${key}&lat=${lat}&lon=${lon}&units=I&days=7`);
+      let res = await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=${keyTwo}&lat=${lat}&lon=${lon}&q=${lat},${lon}&days=5`)
+      debugger
+      
       setCurrentWeather(res.data.data);
       setToday(res.data.data[0]);
       setWeatherImg(res.data.data[0].weather)
@@ -34,39 +37,23 @@ const Weather = () => {
     }
   };
 
-  const weatherDay = async (lat, lon) =>{
-    console.log(lat, lon)
-    try{
-      let res = await axios.get(`https://api.sunrise-sunset.org/json?lng=${lon}&lat=${lat}&formatted=0`);
-      return res.data.results;
-    }catch(err){
-      console.log(err)
-
-    }
-  }
-
   const setting = (res) => {
     setWeather(res);
   };
-  const daySetting = (res) =>{
-    setDay(res)
-  }
 
   const pageLoad = () => {
     getLocation().then((res) => {
       weatherCall(res[0], res[1]).then((res) => setting(res));
-      weatherDay(res[0], res[1]).then((res) => daySetting(res));
     });
   };
   
   useEffect(() => {
-    
       pageLoad()
   }, []);
 
   return (
     <div className="weatherDiv">
-      <WeatherBody weather={weather} currentWeather={currentWeather} today={today} weatherImg={weatherImg} day={day} />
+      {/* <WeatherBody weather={weather} currentWeather={currentWeather} today={today} weatherImg={weatherImg} /> */}
     </div>
   );
 };
