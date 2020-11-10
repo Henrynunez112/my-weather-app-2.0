@@ -9,7 +9,7 @@ const WeatherHeader = ({ location }) => {
   return (
   <div className="weatherBody">
     <div className="weatherToday">
-      {/* <h1>Today: {moment().format('MMMM Do YYYY')}</h1> */}
+      {/* <h1>Today: {moment().format()}</h1> */}
       </div>
   <div className="weatherBodyHeader">
      <h2>{location.name}, {location.region}</h2>

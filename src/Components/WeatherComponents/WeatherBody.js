@@ -7,7 +7,7 @@ const WeatherBody = ({weather, location}) =>{
     // currentWeather, day, today, weatherImg
     return (
         <div>
-            <WeatherHeader location={location} />
+            {/* <WeatherHeader location={location} /> */}
             {/* <WeatherDay day={day} weather={weather} /> */}
             {/* <SevenDayForcast currentWeather={currentWeather} /> */}
         </div>
