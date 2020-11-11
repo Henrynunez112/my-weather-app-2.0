@@ -6,10 +6,10 @@ import WeatherDay from './WeatherDay';
 const WeatherBody = ({current, weather, sunMoon, currentWeatherImg}) =>{
     debugger
     return (
-        <div>
+        <div className='weatherBody'>
+            
             <WeatherHeader current={current} currentWeatherImg={currentWeatherImg} />
             <WeatherDay weather={weather} sunMoon={sunMoon} />
-            {/* <SevenDayForcast currentWeather={currentWeather} /> */}
         </div>
     )
 
