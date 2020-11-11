@@ -1,0 +1,8 @@
+:root{
+    --black: #000000;
+    --tron: #7DFDFE;
+    --cultured: #F8F9FA;
+}
+.weatherBody{
+    border: 2px solid var(--black);
+}
