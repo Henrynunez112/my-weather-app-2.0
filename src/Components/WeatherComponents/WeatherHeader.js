@@ -7,11 +7,10 @@ const WeatherHeader = ({current}) => {
   return (
   <div className="weatherBody">
     <div className="weatherToday">
-      {/* <h1>Today: {moment().format()}</h1> */}
       </div>
   <div className="weatherBodyHeader">
-    <p>{current.temp} °F</p>
-
+    <p>Current Temp: {current.temp} °F</p>
+    <p>Feels like: {current.feels_like}°F</p>
     <p></p>
    </div>
   </div>
