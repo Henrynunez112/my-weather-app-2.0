@@ -10,6 +10,9 @@ const WeatherHeader = ({current}) => {
       {/* <h1>Today: {moment().format()}</h1> */}
       </div>
   <div className="weatherBodyHeader">
+    <p>{current.temp} °F</p>
+
+    <p></p>
    </div>
   </div>
   );
