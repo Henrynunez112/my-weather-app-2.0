@@ -6,7 +6,7 @@ import './WeatherBody.css';
 
 const WeatherBody = ({current, weather, sunMoon, currentWeatherImg}) =>{
     return (
-        <div className='weatherBody container'>
+        <div className='weatherBody jumbotron container'>
             <div className='col'>
             <div className='row align-items-start justify-content-start'>
             <WeatherHeader current={current} currentWeatherImg={currentWeatherImg} />

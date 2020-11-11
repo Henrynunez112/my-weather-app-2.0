@@ -4,7 +4,7 @@
     --cultured: #F8F9FA;
 }
 
-.weatherHeader{
+.weatherDay{
     border: 2px solid var(--black);
     margin: 5px;
 }

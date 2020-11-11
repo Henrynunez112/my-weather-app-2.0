@@ -1,12 +1,13 @@
 import React from 'react';
 import Moment from 'react-moment';
-import 'moment-timezone'
+import './WeatherDay.css';
+import 'moment-timezone';
 
 const WeatherDay = ({weather, sunMoon}) =>{
     let sunrise = new Date(sunMoon.sunrise);
     let sunset = new Date(sunMoon.sunset);
     return(
-        <div className="weatherDay justify-content-center align-content-center">
+        <div className="weatherDay col-3 justify-content-start align-content-start">
             <p>Timezone: <span>{weather.timezone}</span></p>
             <p>
             Sunrise: <Moment date={sunrise} format="hh:mm A"/>
