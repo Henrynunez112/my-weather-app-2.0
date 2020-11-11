@@ -5,4 +5,9 @@
 }
 .weatherBody{
     border: 2px solid var(--black);
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    align-content: center;
+
 }

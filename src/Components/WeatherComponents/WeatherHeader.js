@@ -1,12 +1,10 @@
 import React from "react";
-import moment from "moment";
+import './WeatherHeader.css'
+// import moment from "moment";
 
 const WeatherHeader = ({current, currentWeatherImg}) => {
-  console.log(currentWeatherImg)
-  debugger
-
   return (
-  <div className="weatherBody">
+  <div className="weatherHeader col">
     <div className="weatherToday">
       <img
         className="headImg"

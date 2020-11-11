@@ -1,0 +1,9 @@
+:root{
+    --black: #000000;
+    --tron: #7DFDFE;
+    --cultured: #F8F9FA;
+}
+
+.weatherHeader{
+    justify-content: start;
+}

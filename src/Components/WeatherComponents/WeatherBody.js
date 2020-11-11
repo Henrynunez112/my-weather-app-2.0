@@ -5,11 +5,16 @@ import './WeatherBody.css';
 // import SevenDayForcast from './SevenDaysForcast';
 
 const WeatherBody = ({current, weather, sunMoon, currentWeatherImg}) =>{
-    debugger
     return (
-        <div className='weatherBody'>
+        <div className='weatherBody container'>
+            <div className='col'>
+            <div className='row align-items-start justify-content-start'>
             <WeatherHeader current={current} currentWeatherImg={currentWeatherImg} />
+            </div>
+            <div className='row align-items-start justify-content-start'>
             <WeatherDay weather={weather} sunMoon={sunMoon} />
+            </div>
+            </div>
         </div>
     )
 

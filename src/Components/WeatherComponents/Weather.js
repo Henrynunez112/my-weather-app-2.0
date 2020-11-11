@@ -22,8 +22,6 @@ const Weather = () => {
   };
   
   const weatherCall = async (lat, lon) => {
-    console.log(lat, lon)
-    debugger
     try{
       let res = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=${key}&units=imperial`)
       setCurrent(res.data.current);
