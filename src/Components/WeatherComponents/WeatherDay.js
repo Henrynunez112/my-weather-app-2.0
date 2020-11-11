@@ -7,7 +7,8 @@ const WeatherDay = ({weather, sunMoon}) =>{
     let sunrise = new Date(sunMoon.sunrise);
     let sunset = new Date(sunMoon.sunset);
     return(
-        <div className="weatherDay col-3 justify-content-start align-content-start">
+        <div className="weatherDay col-4 justify-content-start align-content-start">
+            <div className='row weatherDayBody'>
             <p>Timezone: <span>{weather.timezone}</span></p>
             <p>
             Sunrise: <Moment date={sunrise} format="hh:mm A"/>
@@ -15,6 +16,7 @@ const WeatherDay = ({weather, sunMoon}) =>{
             <p>
              Sunset: <Moment date={sunset} format="hh:mm A"/>
             </p>
+            </div>
           </div>
     )
 

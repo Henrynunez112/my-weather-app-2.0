@@ -7,4 +7,5 @@
 .weatherHeader{
     border: 2px solid var(--black);
     margin: 5px;
+    text-align: center;
 }

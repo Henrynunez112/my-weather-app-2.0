@@ -6,7 +6,7 @@
 .weatherBody{
     border: 2px solid var(--black);
     padding: 20px;
-    margin-top: 20px;
+    margin: 35px auto;
     justify-content: center;
     align-content: center;
 
