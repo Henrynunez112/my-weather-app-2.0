@@ -7,7 +7,7 @@ import './WeatherBody.css';
 const WeatherBody = ({current, weather, sunMoon, currentWeatherImg, forecast}) =>{
     return (
         <div className='weatherBody container'>
-            <div className="row">
+            <div className="row currentWeather">
             <WeatherHeader current={current} currentWeatherImg={currentWeatherImg} />
             <WeatherDay weather={weather} sunMoon={sunMoon} />
             </div>
