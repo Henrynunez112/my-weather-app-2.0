@@ -4,10 +4,12 @@
     --cultured: #F8F9FA;
 }
 .weatherBody{
-    border: 2px solid var(--black);
+    border: 1px solid var(--black);
+    border-radius: 0px !important;
     padding: 20px;
     margin: 35px auto;
     justify-content: center;
     align-content: center;
+    background-color: var(--cultured) !important;
 
 }
