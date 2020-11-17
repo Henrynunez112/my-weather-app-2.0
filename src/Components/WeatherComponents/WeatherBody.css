@@ -5,6 +5,8 @@
 }
 .weatherBody{
     border: 1px solid var(--black);
+    display: flex;
+    flex-direction: column;
     border-radius: 0px !important;
     padding: 20px;
     margin: 35px auto;
