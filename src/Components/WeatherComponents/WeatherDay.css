@@ -1,20 +1,28 @@
-:root{
-    --black: #000000;
-    --tron: #7DFDFE;
-    --cultured: #F8F9FA;
+:root {
+  --black: #000000;
+  --tron: #7dfdfe;
+  --cultured: #f8f9fa;
 }
 
-.weatherDay{
-    border: 1px solid var(--black);
-    margin: 5px;
-    text-align: center;
+.weatherDay {
+  border: 1px solid var(--black);
+  margin: 5px;
+  text-align: center;
 }
-.weatherDayBody{
-    text-align: center;
-    padding: 5px;
+.weatherDayBody {
+  text-align: center;
+  padding: 5px;
 }
-.weatherTimezone{
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+.weatherTimezone {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.surise {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+#suriseTime {
+  text-align: center;
 }

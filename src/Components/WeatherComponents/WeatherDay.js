@@ -12,7 +12,6 @@ const WeatherDay = ({weather, sunMoon}) =>{
     return(
         <div className="weatherDay col-4 justify-content-start align-content-start">
             <div className="row weatherDayBody justify-content-center align-content-center">
-
             <div className="col">
                 <div className="row weatherTimezone">
             <h3>Timezone:</h3>
@@ -20,10 +19,18 @@ const WeatherDay = ({weather, sunMoon}) =>{
                 </div>
             </div>
             <div className="col">
+                <div className="row surise">
+                    <div className="col">
+
             <FontAwesomeIcon icon={faSun} />
-            <p>
-            Sunrise: <Moment date={sunrise} format="hh:mm A"/>
+                    </div>
+                    <div className="col">
+            <p id="suriseTime">
+            <Moment date={sunrise} format="hh:mm A"/>
             </p>
+
+                    </div>
+                </div>
             </div>
             <div className="col">
             <FontAwesomeIcon icon={faMoon} />
