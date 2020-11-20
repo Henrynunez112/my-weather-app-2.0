@@ -15,8 +15,8 @@ const WeatherDay = ({weather, sunMoon}) =>{
 
             <div className="col">
                 <div className="row weatherTimezone">
-            <p>Timezone:</p>
-            <p>{weather.timezone}</p>
+            <h3>Timezone:</h3>
+            <h5>{weather.timezone}</h5>
                 </div>
             </div>
             <div className="col">
