@@ -12,7 +12,8 @@
     margin: 35px auto;
     justify-content: center;
     align-content: center;
-    background-color: var(--cultured) !important;
+    /* background-color: var(--cultured) !important; */
+    color: var(--black);
 }
 .currentWeather{
     justify-content: space-evenly;

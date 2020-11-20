@@ -4,6 +4,9 @@ import './Forecast.css';
 
 const Forcast = ({forecast}) =>{
     return forecast.map((day, i) =>{
+      if(i > 0){
+
+      
         return (
             <div key={i} className="forecast col">
 
@@ -43,6 +46,7 @@ const Forcast = ({forecast}) =>{
 
             </div>
         )
+      }
     })
 
 };

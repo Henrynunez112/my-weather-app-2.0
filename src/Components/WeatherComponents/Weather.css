@@ -8,7 +8,7 @@
 
 .weatherDiv{
     /* background-color: var(--cultured) !important; */
-    background-image: linear-gradient(to bottom right, var(--magTwoApp), green), url("../Images/pexels-skitterphoto-928.jpg");
+    background-image: linear-gradient(to bottom right, var(--magTwoApp), var(--lBTwoApp)), url("../Images/pexels-skitterphoto-928.jpg");
     background-size: cover;
     overflow: auto;
 }
