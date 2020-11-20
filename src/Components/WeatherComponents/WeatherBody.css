@@ -17,3 +17,8 @@
 .currentWeather{
     justify-content: space-evenly;
 }
+
+.eachForecast{
+    display: flex;
+    flex-direction: row;
+}

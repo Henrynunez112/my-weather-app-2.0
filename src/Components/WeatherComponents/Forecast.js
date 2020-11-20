@@ -1,10 +1,11 @@
 import React from 'react';
 import Moment from 'react-moment';
+// import './Forecast.css';
 
 const Forcast = ({forecast}) =>{
     return forecast.map((day, i) =>{
         return (
-            <div key={i} className="forecast container">
+            <div key={i} className="forecast container col">
                 <div className="forcastImg">
                 <img
             alt=""

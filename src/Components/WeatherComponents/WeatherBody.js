@@ -11,8 +11,10 @@ const WeatherBody = ({current, weather, sunMoon, currentWeatherImg, forecast}) =
             <WeatherHeader current={current} currentWeatherImg={currentWeatherImg} />
             <WeatherDay weather={weather} sunMoon={sunMoon} />
             </div>
-            <div className="row">
+            <div className="row forecastContainer">
+                <div className="col eachForecast">
             <Forecast forecast={forecast} />
+                </div>
             </div>
     
          
