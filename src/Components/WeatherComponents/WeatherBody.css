@@ -17,6 +17,9 @@
 .currentWeather{
     justify-content: space-evenly;
 }
+.forecastContainer{
+    overflow: auto;
+}
 
 .eachForecast{
     display: flex;
