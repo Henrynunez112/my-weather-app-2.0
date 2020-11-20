@@ -27,13 +27,17 @@ const Forcast = ({forecast}) =>{
 
 
                 </div>
-                <div key={i + 2} className="row">
+                <div key={i + 2} className="row forcastNumber">
+                  <div className="col forcastNumberDegree">
+
                 <p id="degrees">
             {" "}
             <span id="degSpan">
-              {day.temp.min.toString().slice(0, 2)}°
-            </span> | {day.temp.max.toString().slice(0, 2)}°
+              {day.temp.min.toString().slice(0, 2)}°F
+            </span> | {day.temp.max.toString().slice(0, 2)}°F
+            
           </p>
+                  </div>
 
                 </div>
 

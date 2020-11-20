@@ -23,3 +23,7 @@
 .dayDescription{
     margin: 5px 10px;
 }
+.forecastNumberDegree{
+    justify-content: center;
+    align-content: center;
+}
