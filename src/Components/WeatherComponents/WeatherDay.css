@@ -13,3 +13,8 @@
     text-align: center;
     padding: 5px;
 }
+.weatherTimezone{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
