@@ -1,5 +1,25 @@
+:root{
+    --black: #000000;
+    --tron: #7DFDFE;
+    --cultured: #F8F9FA;
+}
 .forecast{
-    display: flex;
-    flex-direction: row;
-    border: 1px solid gray;
+    border: 1px solid var(--black);
+    margin: 2px;
+}
+.forecastImg{
+    justify-content: center;
+    padding: 10px;
+}
+.forecastDay{
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+.dayOfWeek{
+    margin: 5px 10px;
+}
+.dayDescription{
+    margin: 5px 10px;
 }
