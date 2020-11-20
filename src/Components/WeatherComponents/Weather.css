@@ -6,4 +6,5 @@
 
 .weatherDiv{
     background-color: var(--cultured) !important;
+    overflow: auto;
 }
