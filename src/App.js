@@ -14,6 +14,7 @@ import "./App.css";
 function App() {
   return (
     <ThemeProvider theme={lightTheme}>
+      <GlobalStyle />
     <div className="App">
       <NavBar />
       <Switch>
