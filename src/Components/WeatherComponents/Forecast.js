@@ -3,7 +3,9 @@ import Moment from 'react-moment';
 import './Forecast.css';
 
 const Forcast = ({forecast}) =>{
-    return forecast.map((day, i) =>{
+
+    return forecast.map((day, i) => {
+
       if(i > 0){
 
       
