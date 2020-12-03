@@ -25,8 +25,8 @@ function App() {
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-      <GlobalStyle />
       <div className="App">
+      <GlobalStyle />
         <NavBar />
         <button onClick={toggleTheme}>Click Here</button>
         <Switch>

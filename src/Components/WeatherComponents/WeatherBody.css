@@ -13,7 +13,7 @@
     justify-content: center;
     align-content: center;
     /* background-color: var(--cultured) !important; */
-    color: var(--black);
+    /* color: var(--black); */
 }
 .currentWeather{
     justify-content: space-evenly;

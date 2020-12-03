@@ -2,7 +2,7 @@
     --black: #000000;
     --tron: #7DFDFE;
     --cultured: #F8F9FA;
-    --white: rgba(255,255,255,0.5);
+    --white: rgba(255,255,255,0.15);
 }
 .homeContainer{
     border-radius: 13px;
