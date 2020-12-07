@@ -5,7 +5,7 @@
 }
 .navbar{
     border: 1px solid var(--black) !important;
-    background-color: var(--cultured) !important;
+    /* background-color: var(--cultured) !important; */
 }
 .navbar-brand{
     border: 1px solid var(--black);

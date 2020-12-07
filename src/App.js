@@ -8,14 +8,13 @@ import Home from "./Components/Home/Home";
 import Footer from "./Components/Footer/Footer.js";
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './Components/DarkTheme/Theme';
-import { GlobalStyle } from './Components/DarkTheme/DarkTheme';
+import { GlobalStyle } from './Components/DarkTheme/GlobalStyle';
 import "./App.css";
 
 function App() {
   const [theme, setTheme] = useState('light');
 
   const toggleTheme = () => {
-    debugger
     if (theme === 'light') {
       setTheme('dark')
     } else {
@@ -25,9 +24,9 @@ function App() {
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-      <div className="App">
       <GlobalStyle />
-        <NavBar />
+      <div className="App">
+        <NavBar theme={theme} />
         <button onClick={toggleTheme}>Click Here</button>
         <Switch>
           <Route exact path="/">
