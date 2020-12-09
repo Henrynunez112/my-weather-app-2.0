@@ -43,13 +43,13 @@ const NavBar = ({ theme }) => {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav" >
-          <li className="nav-item" style={theme === 'light' ? lightText : darkText}>
-            <NavLink className="nav-link" exact to="/">
+          <li className="nav-item">
+            <NavLink className="nav-link" exact to="/" style={theme === 'light' ? lightText : darkText}>
               Home
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" exact to="/weather">Weather</NavLink>
+            <NavLink className="nav-link" exact to="/weather" style={theme === 'light' ? lightText : darkText}>Weather</NavLink>
           </li>
         </ul>
       </div>
