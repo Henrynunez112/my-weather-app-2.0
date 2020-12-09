@@ -9,7 +9,6 @@
     width: 100%;
     height: 60px;
     line-height: 43px;
-    background-color: var(--cultured);
 }
 .footerUl{
     border: 1px solid var(--black);
