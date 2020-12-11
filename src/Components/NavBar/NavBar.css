@@ -3,11 +3,7 @@
     --tron: #7DFDFE;
     --cultured: #F8F9FA;
 }
-.navbar{
-    border: 1px solid var(--black) !important;
-    /* background-color: var(--cultured) !important; */
-}
 .navbar-brand{
-    border: 1px solid var(--black);
+
     padding: 5px
 }

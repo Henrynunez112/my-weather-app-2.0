@@ -2,7 +2,7 @@
     --black: #000000;
     --tron: #7DFDFE;
     --cultured: #F8F9FA;
-    --white: rgba(255,255,255,0.15);
+
 }
 .homeContainer{
     border-radius: 13px;
@@ -13,8 +13,6 @@
 }
 .homeJumbotron{
     box-shadow: 5px 10px 8px #888888;
-    
-    background-color: var(--white) !important;
     border-radius: 0px;
     border: 1px solid var(--black);
     /* background-color: var(--cultured) !important; */

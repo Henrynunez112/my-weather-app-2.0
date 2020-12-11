@@ -30,13 +30,13 @@ function App() {
         <button onClick={toggleTheme}>Click Here</button>
         <Switch>
           <Route exact path="/">
-            <Home />
+            <Home theme={theme} />
           </Route>
           <Route exact path="/weather">
             <Weather />
           </Route>
         </Switch>
-        <Footer />
+        <Footer theme={theme} />
       </div>
     </ThemeProvider>
   );
