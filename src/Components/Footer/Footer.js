@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = ({ theme }) => {
 
   const darkThemeFooter = {
-    border: '4px solid #DA3633',
+    border: '3px solid #DA3633',
     backgroundColor: '#363537',
     transition: 'all 0.25s linear',
   }

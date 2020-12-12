@@ -3,7 +3,7 @@ import "../Home/Home.css";
 
 const Home = ({ theme }) => {
   const darkJumbotron = {
-    border: '4px solid #3fb950',
+    border: '3px solid #3fb950',
     backgroundColor: '#363537',
     transition: 'all 0.25s linear'
   }

@@ -7,13 +7,13 @@ const NavBar = ({ theme }) => {
 
   const darkTheme = {
     backgroundColor: '#363537',
-    border: '4px solid #388bfd',
+    border: '3px solid #388bfd',
     color: '#E2E2E2',
     transition: 'all 0.25s linear',
   }
 
   const darkThemeLogo = {
-    border: '4px solid #e2b341',
+    border: '3px solid #e2b341',
     color: '#E2E2E2',
     transition: 'all 0.25s linear'
   }

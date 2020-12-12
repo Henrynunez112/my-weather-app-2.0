@@ -9,7 +9,7 @@ const WeatherBody = ({ current, weather, sunMoon, currentWeatherImg, forecast, t
     debugger
     // const magTwoApp = 
     const darkModeWeatherBody = {
-        border: '4px solid #db61a2',
+        border: '3px solid #db61a2',
         backgroundImage: `linear-gradient(to bottom right, rgba(36, 90, 253, 0.4), rgba(36, 90, 253, 0.4)), url(${background})`,
         backgroundSize: 'cover'
         // backgroundImage: 'url('+`${background}`+')'
