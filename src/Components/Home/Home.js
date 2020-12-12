@@ -3,16 +3,16 @@ import "../Home/Home.css";
 
 const Home = ({ theme }) => {
   const darkJumbotron = {
-    border: '2px solid #7DFDFE',
+    border: '4px solid #3fb950',
     backgroundColor: '#363537',
     transition: 'all 0.25s linear'
   }
   const darkHeaderBorder = {
     padding: "20px",
-    borderBottom: "2px solid #7DFDFE",
+    borderBottom: "4px solid #3fb950",
     boxShadow: "0 4px 2px -2px gray",
     marginBottom: "20px",
-    transition: 'all 0.30s linear'
+    transition: 'all 0.25s linear'
   }
   return (
     <div className="homeContainer container">

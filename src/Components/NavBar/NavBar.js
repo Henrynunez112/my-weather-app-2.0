@@ -5,21 +5,15 @@ import "./NavBar.css";
 
 const NavBar = ({ theme }) => {
 
-  const lightTheme = {
-    backgroundColor: '#E2E2E2',
-    border: '2px solid #363537',
-    color: '#363537',
-    transition: 'all 0.25s linear',
-  }
   const darkTheme = {
     backgroundColor: '#363537',
-    border: '2px solid #7DFDFE',
+    border: '4px solid #388bfd',
     color: '#E2E2E2',
     transition: 'all 0.25s linear',
   }
 
   const darkThemeLogo = {
-    border: '2px solid #e2b341',
+    border: '4px solid #e2b341',
     color: '#E2E2E2',
     transition: 'all 0.25s linear'
   }
@@ -36,7 +30,7 @@ const NavBar = ({ theme }) => {
 
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light sticky-top" style={theme === 'light' ? lightTheme : darkTheme} >
+    <nav className="navbar navbar-expand-lg navbar-light sticky-top" style={theme === 'dark' ? darkTheme : null} >
       <a className="navbar-brand" href="/" style={theme === 'dark' ? darkThemeLogo : null}>
         <span id='brandedH'>H</span>enry's Widget App
       </a>
