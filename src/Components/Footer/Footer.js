@@ -1,9 +1,16 @@
 import React from "react";
 import "./Footer.css";
 
-const Footer = () => {
+const Footer = ({ theme }) => {
+
+  const darkThemeFooter = {
+    border: '4px solid #DA3633',
+    backgroundColor: '#363537',
+    transition: 'all 0.25s linear',
+  }
+
   return (
-    <div className="footer">
+    <div className="footer" style={theme === 'dark' ? darkThemeFooter : null}>
       <ul className="nav footerUl justify-content-around">
         <li className="nav-item" id="contactIcon">
           <a className="nav-link" href={"https://www.linkedin.com/in/henrysaulnunez/"}

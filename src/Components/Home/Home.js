@@ -3,13 +3,13 @@ import "../Home/Home.css";
 
 const Home = ({ theme }) => {
   const darkJumbotron = {
-    border: '1px solid #7DFDFE',
+    border: '2px solid #7DFDFE',
     backgroundColor: '#363537',
     transition: 'all 0.25s linear'
   }
   const darkHeaderBorder = {
     padding: "20px",
-    borderBottom: "1px solid #7DFDFE",
+    borderBottom: "2px solid #7DFDFE",
     boxShadow: "0 4px 2px -2px gray",
     marginBottom: "20px",
     transition: 'all 0.30s linear'

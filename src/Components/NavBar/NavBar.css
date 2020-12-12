@@ -4,6 +4,6 @@
     --cultured: #F8F9FA;
 }
 .navbar-brand{
-
-    padding: 5px
+    padding: 5px;
+    border: 2px solid #363537;
 }

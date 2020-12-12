@@ -7,15 +7,21 @@ const NavBar = ({ theme }) => {
 
   const lightTheme = {
     backgroundColor: '#E2E2E2',
-    border: '1px solid #363537',
+    border: '2px solid #363537',
     color: '#363537',
     transition: 'all 0.25s linear',
   }
   const darkTheme = {
     backgroundColor: '#363537',
-    border: '1px solid #7DFDFE',
+    border: '2px solid #7DFDFE',
     color: '#E2E2E2',
     transition: 'all 0.25s linear',
+  }
+
+  const darkThemeLogo = {
+    border: '2px solid #e2b341',
+    color: '#E2E2E2',
+    transition: 'all 0.25s linear'
   }
 
   const lightText = {
@@ -31,7 +37,7 @@ const NavBar = ({ theme }) => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light sticky-top" style={theme === 'light' ? lightTheme : darkTheme} >
-      <a className="navbar-brand" href="/" style={theme === 'light' ? lightTheme : darkTheme}>
+      <a className="navbar-brand" href="/" style={theme === 'dark' ? darkThemeLogo : null}>
         <span id='brandedH'>H</span>enry's Widget App
       </a>
       <button
