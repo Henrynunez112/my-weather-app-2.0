@@ -12,6 +12,19 @@ const NavBar = ({ theme }) => {
     transition: 'all 0.25s linear',
   }
 
+  const darkToggler = {
+    border: '3px solid #388bfd',
+  }
+  const lightToggler = {
+    border: '3px solid #363537',
+  }
+
+  const darkToggleIcon = {
+    backgroundColor: '#c77402',
+    filter: 'invert(1)',
+    borderRadius: '255px 15px 225px 15px/15px 225px 15px 255px'
+  }
+
   const darkThemeLogo = {
     border: '3px solid #e2b341',
     color: '#E2E2E2',
@@ -42,8 +55,9 @@ const NavBar = ({ theme }) => {
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        style={theme === 'dark' ? darkToggler : lightToggler}
       >
-        <span className="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon" style={theme === 'dark' ? darkToggleIcon : null}></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav" >

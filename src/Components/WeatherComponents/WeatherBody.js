@@ -6,7 +6,6 @@ import Forecast from './Forecast';
 import './WeatherBody.css';
 
 const WeatherBody = ({ current, weather, sunMoon, currentWeatherImg, forecast, theme }) => {
-    debugger
     // const magTwoApp = 
     const darkModeWeatherBody = {
         border: '3px solid #db61a2',
