@@ -8,7 +8,7 @@
     transition: all 0.25s linear;
     box-shadow: 1px 1px 10px #888888;
     color: var(--dark);
-    border-radius: 5px;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;: 5px;
 }
 .navbar{
     background-color: var(--light);
@@ -16,5 +16,5 @@
     box-shadow: 1px 1px 10px #888888;
     color: var(--dark);
     transition: all 0.25s linear;
-    border-radius: 5px;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;: 5px;
 }

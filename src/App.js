@@ -33,7 +33,7 @@ function App() {
             <Home theme={theme} />
           </Route>
           <Route exact path="/weather">
-            <Weather />
+            <Weather theme={theme} />
           </Route>
         </Switch>
         <Footer theme={theme} />
