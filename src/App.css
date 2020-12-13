@@ -1,16 +1,17 @@
 .App {
   text-align: center;
 }
-
-
 #theButton{
   justify-self: center;
   align-self: center;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   transition: all 0.25s linear;
-  border: 3px solid #363537 !important;
+  border: 3px solid #6e40c9;
   outline: none;
+  background-color: #363537;
+  color: #f8e3a1;
 }
+
 .buttonDark{
  display: flex;
 }

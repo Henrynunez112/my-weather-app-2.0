@@ -22,16 +22,21 @@ function App() {
     }
   }
 
+  const darkButtonMode = {
+    backgroundColor: '#6e40c9',
+    border: '3px solid #E2E2E2'
+  }
+
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyle />
       <div className="App">
         <div className="row container-fluid">
           <div className="col-11">
-          <NavBar theme={theme} />
+            <NavBar theme={theme} />
           </div>
           <div className="col-1 justify-content-center align-content-center buttonDark">
-          <button id="theButton" onClick={toggleTheme}>Click Here</button>
+            <button id="theButton" style={theme === 'dark' ? darkButtonMode : null} onClick={toggleTheme}>{theme === 'light' ? 'Dark Mode' : 'Light Mode'}</button>
           </div>
         </div>
         <Switch>
