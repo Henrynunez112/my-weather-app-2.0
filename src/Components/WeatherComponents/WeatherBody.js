@@ -54,7 +54,6 @@ const WeatherBody = ({ current, weather, sunMoon, currentWeatherImg, forecast, t
 
     return (
         <div className='weatherBody container' style={theme === 'dark' ? darkModeWeatherBody : null}>
-            
             <div className="row justify-content-around">
                 <WeatherHeader current={current} currentWeatherImg={currentWeatherImg} />
                 <WeatherDay weather={weather} sunMoon={sunMoon} />

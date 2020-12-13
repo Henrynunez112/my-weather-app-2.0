@@ -1,14 +1,16 @@
-/* :root{
-  --black: #000000;
-  --tron: #7DFDFE;
-  --cultured: #F8F9FA;
-} */
 .App {
   text-align: center;
-  /* background-color: var(--cultured); */
 }
 
 
-
-
-
+#theButton{
+  justify-self: center;
+  align-self: center;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  transition: all 0.25s linear;
+  border: 3px solid #363537 !important;
+  outline: none;
+}
+.buttonDark{
+ display: flex;
+}

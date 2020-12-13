@@ -26,8 +26,14 @@ function App() {
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyle />
       <div className="App">
-        <NavBar theme={theme} />
-        <button onClick={toggleTheme}>Click Here</button>
+        <div className="row container-fluid">
+          <div className="col-11">
+          <NavBar theme={theme} />
+          </div>
+          <div className="col-1 justify-content-center align-content-center buttonDark">
+          <button id="theButton" onClick={toggleTheme}>Click Here</button>
+          </div>
+        </div>
         <Switch>
           <Route exact path="/">
             <Home theme={theme} />

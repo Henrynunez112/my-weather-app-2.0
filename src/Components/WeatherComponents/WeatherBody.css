@@ -14,8 +14,7 @@
     margin: 10px auto;
     justify-content: center;
     align-content: center;
-    transition: all 0.25s linear;
-    height: 73vh;
+    height: 80vh;
 }
 .currentWeather{
     justify-content: space-evenly;

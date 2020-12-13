@@ -42,11 +42,14 @@ const NavBar = ({ theme }) => {
   }
 
 
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light sticky-top" style={theme === 'dark' ? darkTheme : null} >
-      <a className="navbar-brand" href="/" style={theme === 'dark' ? darkThemeLogo : null}>
-        <span id='brandedH'>H</span>enry's Widget App
+
+        <a className="navbar-brand" href="/" style={theme === 'dark' ? darkThemeLogo : null}>
+          <span id='brandedH'>H</span>enry's Widget App
       </a>
+
       <button
         className="navbar-toggler"
         type="button"
