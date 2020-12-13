@@ -1,14 +1,8 @@
-:root{
-    --black: #000000;
-    --tron: #7DFDFE;
-    --cultured: #F8F9FA;
-    --magTwoApp: rgba(36, 90, 253, 0.3);
-    --lBTwoApp: rgba(180, 197, 248, 0.616);
-}
 
 .weatherDiv{
     /* background-color: var(--cultured) !important; */
     /* background-image: linear-gradient(to bottom right, var(--magTwoApp), var(--lBTwoApp)), url("../Images/pexels-skitterphoto-928.jpg"); */
     background-size: cover;
-    overflow: auto;
+    margin: 25px auto;
+    margin-bottom: 75px;
 }

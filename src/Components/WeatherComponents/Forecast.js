@@ -5,10 +5,9 @@ import './Forecast.css';
 const Forcast = ({ forecast }) => {
 
   return forecast.map((day, i) => {
-
     if (i > 0) {
       return (
-        <div key={i} className="forecast col">
+        <div key={i} className="forecast justify-content-center col-8 col-md-1 my-2">
 
           <div className="forecastImg row">
             <img
@@ -19,19 +18,19 @@ const Forcast = ({ forecast }) => {
           </div>
 
           <div key={i + 1} className="row forcastDay">
-            <div className="col dayOfWeek">
+            <div className="row justify-content-center text-center dayOfWeek">
               <Moment format="dddd" unix>
                 {day.dt}
               </Moment>
             </div>
-            <div className="col dayDescription">
-              <p id="dayP">{day.weather[0].main}</p>
+            <div className="row justify-content-center text-center dayDescription">
+              <p className="text-center" id="dayP">{day.weather[0].main}</p>
             </div>
 
 
           </div>
           <div key={i + 2} className="row forcastNumber">
-            <div className="col forcastNumberDegree">
+            <div className="row justify-content-center forcastNumberDegree">
 
               <p id="degrees">
                 {" "}

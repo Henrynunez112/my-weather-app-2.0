@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import clearSkies from '../Images/clearSkies.svg';
 import WeatherHeader from './WeatherHeader';
 import WeatherDay from './WeatherDay';
 import Forecast from './Forecast';
@@ -45,26 +44,63 @@ const WeatherBody = ({ current, weather, sunMoon, currentWeatherImg, forecast, t
     }
 
     const darkModeWeatherBody = {
-        border: '3px solid #f0883e',
+        border: '4px solid #f0883e',
         backgroundSize: 'cover',
         backgroundImage: `linear-gradient(${backgroundColor})`,
-        color: `${textColor}`
+        color: `${textColor}`,
+        transition: 'all 0.25s linear'
     }
 
 
     return (
         <div className='weatherBody container' style={theme === 'dark' ? darkModeWeatherBody : null}>
-            <div className="row currentWeather">
+            
+            <div className="row justify-content-around">
                 <WeatherHeader current={current} currentWeatherImg={currentWeatherImg} />
                 <WeatherDay weather={weather} sunMoon={sunMoon} />
             </div>
-            <div className="row forecastContainer">
-                <div className="col eachForecast">
-                    <Forecast forecast={forecast} />
-                </div>
+            <div className="row forcastContainer justify-content-center">
+                <Forecast forecast={forecast} />
             </div>
         </div>
     )
 
 };
 export default WeatherBody;
+
+
+// <!-- Why Adhoc? Text -->
+// <div class="row">
+//   <div class="col">
+//     <h2 class='text-center display-4'>Why Adhoc?</h2>
+//   </div>
+// </div>
+
+// <!-- Image Reasons Section -->
+// <div class="row justify-content-center">
+//   <div class="col-8 col-md-4 my-2">
+//     <!-- First card goes here -->
+//     <div class="card border-0">
+//     <img src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/experienced.png" class="card-img-top" />
+//     <p class="card-text my-1 text-center">Over 9,000 happy clients, and we learn something new from each one.</p>
+//     </div>
+
+//   </div>
+
+//   <div class="col-8 col-md-4 my-2">
+//     <!-- Second card goes here -->
+//     <div class="card border-0">
+//     <img src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/fun.png" class="card-img-top" />
+//     <p class="card-text my-1 text-center">Administration? Fun? Yea, somehow we make it happen.</p>
+//       </div>
+
+//   </div>
+
+//   <div class="col-8 col-md-4 my-2">
+//     <!-- Third card goes here -->
+//     <div class="card border-0">
+//     <img src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/smart.png" class="card-img-top" />
+//     <p class="card-text my-1 text-center">Innovative solutions to the trickest of everyday task.</p>
+//       </div>
+//   </div>
+// </div>

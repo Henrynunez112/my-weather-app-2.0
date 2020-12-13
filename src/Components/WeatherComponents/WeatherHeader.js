@@ -4,7 +4,7 @@ import './WeatherHeader.css'
 
 const WeatherHeader = ({current, currentWeatherImg}) => {
   return (
-  <div className="weatherHeader col-4 justify-content-start align-content-start">
+  <div className="weatherHeader col-4 justify-content-center align-content-center">
     <div className="row weatherHeaderBody">
     <div className="weatherToday col justify-content-center align-content-center">
       <img

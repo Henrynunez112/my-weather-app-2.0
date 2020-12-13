@@ -1,29 +1,34 @@
-:root{
-    --black: #000000;
-    --tron: #7DFDFE;
-    --cultured: #F8F9FA;
-}
+
 .forecast{
     /* border: 1px solid var(--black); */
-    margin: 2px;
+    margin: 25px;
+    justify-content: center;
+    align-content: center;
 }
 .forecastImg{
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
 }
-.forecastDay{
+.forcastDay{
     justify-content: center;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     margin: 5px;
 }
 .dayOfWeek{
     margin: 5px 10px;
+    text-align: center;
 }
 .dayDescription{
     margin: 5px 10px;
+    text-align: center;
 }
 .forecastNumberDegree{
+    justify-content: center;
+    align-content: center;
+}
+.forcastNumber{
+    padding: 10px;
     justify-content: center;
     align-content: center;
 }
