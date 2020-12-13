@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import WeatherBody from "../WeatherComponents/WeatherBody";
-import Background from "../Images/pexels-skitterphoto-928.jpg"
 import axios from "axios";
 import './Weather.css';
 

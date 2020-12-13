@@ -1,17 +1,49 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import WeatherHeader from './WeatherHeader';
-import background from '../Images/pexels-skitterphoto-928.jpg'
 import WeatherDay from './WeatherDay';
 import Forecast from './Forecast';
 import './WeatherBody.css';
 
 const WeatherBody = ({ current, weather, sunMoon, currentWeatherImg, forecast, theme }) => {
-    // const magTwoApp = 
+    const [currentWeather, setCurrentWeather] = useState("")
+    let backgroundColor = '';
+    console.log(currentWeather)
+
+
+    useEffect(() => {
+        setCurrentWeather(currentWeatherImg.description)
+    }, [currentWeatherImg])
+
+
+    switch (currentWeather) {
+        case 'mist':
+            backgroundColor = 'purple';
+            break;
+        case 'snow':
+        case 'broken clouds':
+            backgroundColor = 'grey';
+            break;
+        case 'thunderstorm':
+            backgroundColor = 'blue';
+            break;
+        case 'rain':
+        case 'shower rain':
+            backgroundColor = 'green';
+            break;
+        case 'clear sky':
+        case 'few clouds':
+        case 'scattered clouds':
+            backgroundColor = 'yellow';
+            break;
+        default:
+            backgroundColor = 'black';
+
+    }
+
     const darkModeWeatherBody = {
-        border: '3px solid #db61a2',
-        backgroundImage: `linear-gradient(to bottom right, rgba(36, 90, 253, 0.4), rgba(36, 90, 253, 0.4)), url(${background})`,
-        backgroundSize: 'cover'
-        // backgroundImage: 'url('+`${background}`+')'
+        border: '3px solid #f0883e',
+        backgroundSize: 'cover',
+        backgroundColor: `${backgroundColor}`
     }
     return (
         <div className='weatherBody container' style={theme === 'dark' ? darkModeWeatherBody : null}>
