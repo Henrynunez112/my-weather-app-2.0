@@ -44,9 +44,15 @@ const WeatherBody = ({ current, weather, sunMoon, currentWeatherImg, forecast, t
     }
 
     const darkModeWeatherBody = {
-        border: '4px solid #f0883e',
+        border: `4px solid ${textColor}`,
         backgroundSize: 'cover',
         backgroundImage: `linear-gradient(${backgroundColor})`,
+        color: `${textColor}`,
+        transition: 'all 0.25s linear'
+    }
+
+    const darkModeBorder = {
+        border: `4px solid ${textColor}`,
         color: `${textColor}`,
         transition: 'all 0.25s linear'
     }
@@ -54,7 +60,7 @@ const WeatherBody = ({ current, weather, sunMoon, currentWeatherImg, forecast, t
 
     return (
         <div className='weatherBody container' style={theme === 'dark' ? darkModeWeatherBody : null}>
-            <div className="row justify-content-around">
+            <div className="row justify-content-around weatherHeaderRow" style={theme === 'dark' ? darkModeBorder: null}>
                 <WeatherHeader current={current} currentWeatherImg={currentWeatherImg} />
                 <WeatherDay weather={weather} sunMoon={sunMoon} />
             </div>

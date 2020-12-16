@@ -3,6 +3,12 @@
     --tron: #7DFDFE;
     --cultured: #F8F9FA;
 }
+.weatherHeaderRow{
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: 3px solid var(--black);
+    transition: all 0.25s linear;
+    box-shadow: 1px 1px 10px #444141af;
+}
 .weatherBody{
     border: 3px solid var(--black);
     box-shadow: 1px 1px 10px #888888;
